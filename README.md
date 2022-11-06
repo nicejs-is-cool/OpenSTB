@@ -24,10 +24,13 @@ There's no commands right now, lol.
 - [ ] Typing
 - [ ] Display of who's typing
 - [ ] Room password popup
-- [ ] rmtb-like Popups
+- [ ] rmtb-like popups
 - [x] User joining/leaving messages
 - [x] DuckConverter (convert stb's messages to internal format)
 - [x] Users/Rooms buttons
 - [x] Event loop
 - [ ] Rewrite janken's CSS in SCSS
 - [x] Drop `he` dependency.
+- [ ] Make this project less tied to strollbox and, more modular.
+- [ ] Auto-patch script to make using this *easier*
+- [ ] IPC protocol (for worker)
