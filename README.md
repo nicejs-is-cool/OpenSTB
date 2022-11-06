@@ -19,7 +19,7 @@ There's no commands right now, lol.
 - [ ] Rooms list (partially done)
 - [ ] Username select
 - [ ] Run socket.io and most of the client-side logic on a worker
-- [ ] Showdown.js support
+- [ ] Showdown support
 - [ ] twemoji
 - [ ] Typing
 - [ ] Display of who's typing
@@ -33,4 +33,6 @@ There's no commands right now, lol.
 - [x] Drop `he` dependency.
 - [ ] Make this project less tied to strollbox and, more modular.
 - [ ] Auto-patch script to make using this *easier*
+    - [ ] Wait for the day sussy starts hosting stb mostly 24/7
 - [ ] IPC protocol (for worker)
+- [ ] Find a use for `SharedArrayBuffer`
