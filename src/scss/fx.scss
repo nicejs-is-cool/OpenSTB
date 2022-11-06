@@ -1,0 +1,389 @@
+.animate {
+    & {
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both
+    }
+    .infinite {
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite
+    }
+    .hinge {
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s
+    }
+}
+
+.anim_3000 {
+    -webkit-animation-duration: 3s !important;
+    animation-duration: 3s !important
+}
+
+.anim_4000 {
+    -webkit-animation-duration: 4s !important;
+    animation-duration: 4s !important
+}
+
+.anim_5000 {
+    -webkit-animation-duration: 5s !important;
+    animation-duration: 5s !important
+}
+
+.transition_200 {
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease
+}
+
+.transition_300 {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.transition_400 {
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease
+}
+
+.transition_500,
+.untransition,
+.fx_unrotate {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease
+}
+
+.fx_rotate {
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+    -webkit-transform: rotate(-180deg) !important;
+    -ms-transform: rotate(-180deg) !important;
+    transform: rotate(-180deg) !important
+}
+
+.fx_spin {
+    -webkit-animation: anim_spin 2s linear infinite;
+    animation: anim_spin 2s linear infinite
+}
+
+.fx_acid {
+    -webkit-animation: anim_acid 2s linear infinite;
+    animation: anim_acid 2s linear infinite
+}
+
+.fx_strobo {
+    -webkit-animation: anim_strobo .1s linear infinite;
+    animation: anim_strobo .1s linear infinite
+}
+
+.fx_strasto {
+    -webkit-animation: anim_strasto .33s linear infinite;
+    animation: anim_strasto .33s linear infinite
+}
+
+.fx_scato {
+    -webkit-animation: anim_scato .125s linear infinite;
+    animation: anim_scato .125s linear infinite
+}
+
+.fx_bublur {
+    -webkit-animation: anim_bublur .166666s linear infinite;
+    animation: anim_bublur .166666s linear infinite
+}
+
+.fx_disco {
+    -webkit-animation: anim_disco .125s linear infinite;
+    animation: anim_disco .125s linear infinite
+}
+
+.fx_sepia {
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%)
+}
+
+.fx_grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%)
+}
+
+.fx_invert {
+    -webkit-filter: invert(100%);
+    filter: invert(100%)
+}
+
+.fx_invertLight {
+    -webkit-filter: invert(100%) hue-rotate(180deg);
+    filter: invert(100%) hue-rotate(180deg)
+}
+
+.fx_blur {
+    -webkit-filter: blur(2px);
+    filter: blur(2px)
+}
+
+#fx1,
+#fx2,
+#fx3,
+#fx4,
+#fx5,
+#fx6,
+#fx7,
+#fx8,
+#fx9,
+#fx10,
+#fx11,
+#fx12 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto
+}
+
+#truc {
+    position: absolute;
+    z-index: 999999;
+    left: 10%;
+    top: 50%;
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px
+}
+
+.vi_svg,
+.vi_svg div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%
+}
+
+@-webkit-keyframes anim_spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes anim_spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes anim_acid {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+        filter: hue-rotate(0deg)
+    }
+    to {
+        -webkit-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg)
+    }
+}
+
+@keyframes anim_acid {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+        filter: hue-rotate(0deg)
+    }
+    to {
+        -webkit-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg)
+    }
+}
+
+@-webkit-keyframes anim_strobo {
+    0% {
+        -webkit-filter: brightness(0);
+        filter: brightness(0)
+    }
+    100% {
+        -webkit-filter: brightness(150%);
+        filter: brightness(150%)
+    }
+}
+
+@keyframes anim_strobo {
+    0% {
+        -webkit-filter: brightness(0);
+        filter: brightness(0)
+    }
+    100% {
+        -webkit-filter: brightness(150%);
+        filter: brightness(150%)
+    }
+}
+
+@-webkit-keyframes anim_strasto {
+    0% {
+        -webkit-filter: contrast(100%) brightness(100%);
+        filter: contrast(100%) brightness(100%)
+    }
+    50% {
+        -webkit-filter: contrast(1000%) brightness(200%);
+        filter: contrast(1000%) brightness(200%)
+    }
+    to {
+        -webkit-filter: contrast(100%) brightness(100%);
+        filter: contrast(100%) brightness(100%)
+    }
+}
+
+@keyframes anim_strasto {
+    0% {
+        -webkit-filter: contrast(100%) brightness(100%);
+        filter: contrast(100%) brightness(100%)
+    }
+    50% {
+        -webkit-filter: contrast(1000%) brightness(200%);
+        filter: contrast(1000%) brightness(200%)
+    }
+    to {
+        -webkit-filter: contrast(100%) brightness(100%);
+        filter: contrast(100%) brightness(100%)
+    }
+}
+
+@-webkit-keyframes anim_scato {
+    0% {
+        -webkit-filter: invert(0);
+        filter: invert(0)
+    }
+    50% {
+        -webkit-filter: invert(0);
+        filter: invert(0)
+    }
+    51% {
+        -webkit-filter: invert(100%);
+        filter: invert(100%)
+    }
+    100% {
+        -webkit-filter: invert(100%);
+        filter: invert(100%)
+    }
+}
+
+@keyframes anim_scato {
+    0% {
+        -webkit-filter: invert(0);
+        filter: invert(0)
+    }
+    50% {
+        -webkit-filter: invert(0);
+        filter: invert(0)
+    }
+    51% {
+        -webkit-filter: invert(100%);
+        filter: invert(100%)
+    }
+    100% {
+        -webkit-filter: invert(100%);
+        filter: invert(100%)
+    }
+}
+
+@-webkit-keyframes anim_bublur {
+    0% {
+        -webkit-filter: blur(0);
+        filter: blur(0)
+    }
+    100% {
+        -webkit-filter: blur(20px);
+        filter: blur(20px)
+    }
+}
+
+@keyframes anim_bublur {
+    0% {
+        -webkit-filter: blur(0);
+        filter: blur(0)
+    }
+    100% {
+        -webkit-filter: blur(20px);
+        filter: blur(20px)
+    }
+}
+
+@-webkit-keyframes anim_disco {
+    0% {
+        -webkit-filter: none;
+        filter: none
+    }
+    100% {
+        -webkit-filter: brightness(.4) sepia(1) hue-rotate(280deg) saturate(530%);
+        filter: brightness(.4) sepia(1) hue-rotate(280deg) saturate(530%)
+    }
+}
+
+@keyframes anim_disco {
+    0% {
+        -webkit-filter: none;
+        filter: none
+    }
+    100% {
+        -webkit-filter: brightness(.4) sepia(1) hue-rotate(280deg) saturate(530%);
+        filter: brightness(.4) sepia(1) hue-rotate(280deg) saturate(530%)
+    }
+}
+
+@-webkit-keyframes scale {
+    0% {
+        width: 500px;
+        height: 500px
+    }
+    25% {
+        width: 400px;
+        height: 500px
+    }
+    50% {
+        width: 500px;
+        height: 500px
+    }
+    75% {
+        width: 500px;
+        height: 400px
+    }
+    100% {
+        width: 500px;
+        height: 500px
+    }
+}
+
+@keyframes scale {
+    0% {
+        width: 500px;
+        height: 500px
+    }
+    25% {
+        width: 400px;
+        height: 500px
+    }
+    50% {
+        width: 500px;
+        height: 500px
+    }
+    75% {
+        width: 500px;
+        height: 400px
+    }
+    100% {
+        width: 500px;
+        height: 500px
+    }
+}
